@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoiceNotes — Offline AI Transcription for Windows & Mac</title>
+  <meta name="description" content="Transcribe audio to text completely offline. No cloud uploads, no subscriptions. AI-powered meeting minutes and chat. $6.99 one-time purchase.">
+  <link rel="canonical" href="https://voicenotes.app/">
+  <link rel="alternate" hreflang="ja" href="https://voicenotes.app/ja/">
+  <link rel="alternate" hreflang="zh" href="https://voicenotes.app/zh/">
+  <link rel="alternate" hreflang="ko" href="https://voicenotes.app/ko/">
+  <link rel="alternate" hreflang="es" href="https://voicenotes.app/es/">
+  <link rel="alternate" hreflang="x-default" href="https://voicenotes.app/">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg0: '#111110', bg1: '#18181A', bg2: '#1F1F22', bg3: '#27272B',
+            border: '#2C2C32', accent: '#E07820', danger: '#E05555',
+            text: '#E4E4EA', text2: '#9A9AA8', text3: '#555560',
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .faq-item.open .faq-content { max-height: 500px; }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); }
+  </style>
+</head>
+<body class="bg-bg0 text-text">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full bg-bg0/90 backdrop-blur-md border-b border-border z-50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+        </div>
+        <span class="text-lg font-semibold">VoiceNotes</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-text2">
+        <a href="#features" class="hover:text-text transition-colors">Features</a>
+        <a href="#pricing" class="hover:text-text transition-colors">Pricing</a>
+        <a href="#faq" class="hover:text-text transition-colors">FAQ</a>
+        <div class="relative group">
+          <button class="hover:text-text transition-colors flex items-center gap-1">
+            EN <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="absolute right-0 top-full mt-2 bg-bg2 border border-border rounded-lg py-1 w-32 hidden group-hover:block shadow-xl">
+            <a href="/" class="block px-4 py-2 text-sm text-accent">English</a>
+            <a href="/ja/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">日本語</a>
+            <a href="/zh/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">中文</a>
+            <a href="/ko/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">한국어</a>
+            <a href="/es/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">Español</a>
+          </div>
+        </div>
+      </nav>
+      <a href="#pricing" class="bg-accent hover:bg-accent/90 text-white px-5 py-2 rounded-lg text-sm font-medium transition-colors">
+        Download
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+        Offline AI Transcription<br>
+        <span class="text-accent">Your Voice Never Leaves Your Device</span>
+      </h1>
+      <p class="text-lg md:text-xl text-text2 mb-4 max-w-2xl mx-auto">
+        Record, transcribe, and generate meeting minutes — all on your computer.
+        No cloud uploads. No subscriptions. No accounts.
+      </p>
+      <p class="text-sm text-text3 mb-10">
+        Trusted by professionals who value privacy. Powered by Whisper AI.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+        <a href="#" class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-xl text-base font-medium transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5zm5.5 2v10l7-5-7-5z"/></svg>
+          Download for Windows
+        </a>
+        <a href="#" class="inline-flex items-center justify-center gap-2 bg-bg2 hover:bg-bg3 border border-border text-text px-8 py-4 rounded-xl text-base font-medium transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83"/><path d="M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
+          Download for Mac
+        </a>
+      </div>
+      <!-- App screenshot placeholder -->
+      <div class="max-w-3xl mx-auto rounded-2xl border border-border bg-bg1 overflow-hidden shadow-2xl">
+        <div class="aspect-video flex items-center justify-center text-text3">
+          <div class="text-center">
+            <svg class="mx-auto mb-4" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+            <p class="text-sm">App screenshot coming soon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 px-6 border-t border-border">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Key Features</h2>
+      <p class="text-text2 text-center mb-16 max-w-2xl mx-auto">Everything you need for voice transcription, built with privacy first.</p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Feature 1 -->
+        <div class="bg-bg1 border border-border rounded-2xl p-8">
+          <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">100% Offline</h3>
+          <p class="text-text2">Your audio never leaves your device. No cloud uploads, no servers, no tracking. Complete privacy by design.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="bg-bg1 border border-border rounded-2xl p-8">
+          <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m2 12 10-7 10 7M2 12l10 7 10-7"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">100+ Languages</h3>
+          <p class="text-text2">Powered by OpenAI's Whisper model. Transcribe in English, Japanese, Chinese, Korean, Spanish, and 100+ more languages with high accuracy.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="bg-bg1 border border-border rounded-2xl p-8">
+          <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">AI Meeting Minutes</h3>
+          <p class="text-text2">Auto-generate structured minutes from your recordings. Summaries, decisions, and action items — powered by local AI (Ollama).</p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="bg-bg1 border border-border rounded-2xl p-8">
+          <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">$6.99 One-Time</h3>
+          <p class="text-text2">No subscriptions. No monthly fees. Pay once, use forever on Windows and Mac. Free trial included (10,000 words).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 px-6 border-t border-border">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Simple Pricing</h2>
+      <p class="text-text2 text-center mb-16">No subscriptions. No hidden fees. Your voice, your data, your device.</p>
+      <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <!-- Free Trial -->
+        <div class="bg-bg1 border border-border rounded-2xl p-8">
+          <h3 class="text-lg font-semibold mb-1">Free Trial</h3>
+          <p class="text-text3 text-sm mb-4">Try before you buy</p>
+          <div class="text-4xl font-bold mb-6">$0</div>
+          <ul class="space-y-3 text-sm text-text2 mb-8">
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 10,000 words transcription</li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> All features included</li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> No account required</li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 100% offline</li>
+          </ul>
+          <a href="#" class="block text-center bg-bg2 hover:bg-bg3 border border-border text-text px-6 py-3 rounded-xl text-sm font-medium transition-colors">
+            Download Free Trial
+          </a>
+        </div>
+        <!-- Pro -->
+        <div class="bg-bg1 border-2 border-accent rounded-2xl p-8 relative">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-white text-xs font-semibold px-3 py-1 rounded-full">BEST VALUE</div>
+          <h3 class="text-lg font-semibold mb-1">VoiceNotes Pro</h3>
+          <p class="text-text3 text-sm mb-4">One-time purchase</p>
+          <div class="text-4xl font-bold mb-1">$6.99</div>
+          <p class="text-text3 text-xs mb-6">Pay once, use forever</p>
+          <ul class="space-y-3 text-sm text-text2 mb-8">
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Unlimited transcription</li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AI meeting minutes</li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AI chat about recordings</li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Windows + Mac</li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Free updates</li>
+          </ul>
+          <a href="#" class="block text-center bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-xl text-sm font-medium transition-colors">
+            Buy Now — $6.99
+          </a>
+        </div>
+      </div>
+      <p class="text-center text-text3 text-xs mt-8">100% offline. Your voice data never leaves your device. No account required.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20 px-6 border-t border-border">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+      <div class="space-y-3">
+        <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
+          <div class="flex items-center justify-between p-5">
+            <span class="font-medium">What is VoiceNotes?</span>
+            <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+          <div class="faq-content px-5 pb-5 text-text2 text-sm">
+            VoiceNotes is a desktop app for Windows and Mac that transcribes audio to text completely offline using OpenAI's Whisper AI model. Your recordings never leave your device.
+          </div>
+        </div>
+        <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
+          <div class="flex items-center justify-between p-5">
+            <span class="font-medium">Is it really 100% offline?</span>
+            <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+          <div class="faq-content px-5 pb-5 text-text2 text-sm">
+            Yes. The transcription engine (Whisper) runs entirely on your computer. No internet connection is needed for recording or transcription. The only time a network connection is used is for the one-time license activation.
+          </div>
+        </div>
+        <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
+          <div class="flex items-center justify-between p-5">
+            <span class="font-medium">What languages are supported?</span>
+            <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+          <div class="faq-content px-5 pb-5 text-text2 text-sm">
+            VoiceNotes supports 100+ languages including English, Japanese, Chinese, Korean, Spanish, French, German, Portuguese, Arabic, and many more. Language can be auto-detected or manually selected.
+          </div>
+        </div>
+        <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
+          <div class="flex items-center justify-between p-5">
+            <span class="font-medium">What are the system requirements?</span>
+            <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+          <div class="faq-content px-5 pb-5 text-text2 text-sm">
+            Windows 10+ (64-bit) or macOS 12 Monterey+. 8GB RAM recommended. The app works on CPU, but an NVIDIA GPU or Apple Silicon will significantly speed up transcription.
+          </div>
+        </div>
+        <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
+          <div class="flex items-center justify-between p-5">
+            <span class="font-medium">What is the AI meeting minutes feature?</span>
+            <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+          <div class="faq-content px-5 pb-5 text-text2 text-sm">
+            After transcription, VoiceNotes can auto-generate structured meeting minutes using a local AI model (Ollama). It creates summaries, key points, and action items — all processed on your device.
+          </div>
+        </div>
+        <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
+          <div class="flex items-center justify-between p-5">
+            <span class="font-medium">How does the free trial work?</span>
+            <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+          <div class="faq-content px-5 pb-5 text-text2 text-sm">
+            Download and use VoiceNotes for free with a 10,000 word transcription limit. All features are available during the trial. When you're ready, upgrade for $6.99 (one-time) for unlimited use.
+          </div>
+        </div>
+        <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
+          <div class="flex items-center justify-between p-5">
+            <span class="font-medium">Is my data private?</span>
+            <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+          <div class="faq-content px-5 pb-5 text-text2 text-sm">
+            Absolutely. VoiceNotes has no analytics, no tracking, no telemetry. We don't run servers. Your audio, transcriptions, and minutes stay on your computer. We literally cannot access your data.
+          </div>
+        </div>
+        <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
+          <div class="flex items-center justify-between p-5">
+            <span class="font-medium">How does VoiceNotes compare to Otter.ai or other cloud services?</span>
+            <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+          <div class="faq-content px-5 pb-5 text-text2 text-sm">
+            Cloud services like Otter.ai ($99.99/year) upload your audio to their servers. VoiceNotes processes everything locally — better privacy, no recurring costs, and works without internet. One-time $6.99 vs $99.99/year.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 border-t border-border">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-7 h-7 rounded-lg bg-accent flex items-center justify-center">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+            </div>
+            <span class="font-semibold">VoiceNotes</span>
+          </div>
+          <p class="text-text3 text-sm max-w-xs">Offline AI transcription for professionals who value privacy.</p>
+        </div>
+        <div class="flex gap-12">
+          <div>
+            <h4 class="text-sm font-medium mb-3">Product</h4>
+            <ul class="space-y-2 text-sm text-text3">
+              <li><a href="#features" class="hover:text-text2">Features</a></li>
+              <li><a href="#pricing" class="hover:text-text2">Pricing</a></li>
+              <li><a href="#faq" class="hover:text-text2">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-sm font-medium mb-3">Legal</h4>
+            <ul class="space-y-2 text-sm text-text3">
+              <li><a href="#" class="hover:text-text2">Privacy Policy</a></li>
+              <li><a href="#" class="hover:text-text2">Terms of Use</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-sm font-medium mb-3">Language</h4>
+            <ul class="space-y-2 text-sm text-text3">
+              <li><a href="/" class="text-accent">English</a></li>
+              <li><a href="/ja/" class="hover:text-text2">日本語</a></li>
+              <li><a href="/zh/" class="hover:text-text2">中文</a></li>
+              <li><a href="/ko/" class="hover:text-text2">한국어</a></li>
+              <li><a href="/es/" class="hover:text-text2">Español</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-border pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-text3 text-xs">&copy; 2026 VoiceNotes. All rights reserved.</p>
+        <p class="text-text3 text-xs">Powered by <a href="https://github.com/ggerganov/whisper.cpp" class="hover:text-text2">whisper.cpp</a> (MIT) &middot; <a href="https://ffmpeg.org" class="hover:text-text2">FFmpeg</a> (LGPL)</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
