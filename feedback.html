@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback — VoiceNotes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { bg0: '#111110', bg1: '#18181A', bg2: '#1F1F22', border: '#2C2C32', accent: '#E07820', text: '#E4E4EA', text2: '#9A9AA8', text3: '#555560' }, fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
+    }
+  </script>
+</head>
+<body class="bg-bg0 text-text font-sans">
+  <div class="max-w-xl mx-auto px-6 py-16">
+    <a href="/" class="text-accent text-sm hover:underline mb-8 block">← Back to VoiceNotes</a>
+    <h1 class="text-3xl font-bold mb-4">Feedback</h1>
+    <p class="text-text2 text-sm mb-8">We'd love to hear from you. Report bugs, request features, or just say hello.</p>
+
+    <div class="space-y-6">
+      <a href="https://github.com/hoglet-com/VoiceNotes/issues" target="_blank" class="block p-5 rounded-xl bg-bg1 border border-border hover:border-accent/50 transition-colors">
+        <h3 class="text-base font-semibold mb-1">Bug Reports & Feature Requests</h3>
+        <p class="text-sm text-text3">Open an issue on GitHub</p>
+      </a>
+
+      <a href="mailto:voicenotes@proton.me" class="block p-5 rounded-xl bg-bg1 border border-border hover:border-accent/50 transition-colors">
+        <h3 class="text-base font-semibold mb-1">Email</h3>
+        <p class="text-sm text-text3">voicenotes@proton.me</p>
+      </a>
+    </div>
+
+    <p class="text-text3 text-xs mt-12">VoiceNotes v0.2.0</p>
+  </div>
+</body>
+</html>
