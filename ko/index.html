@@ -52,11 +52,11 @@
         <a href="#features" class="hover:text-text transition-colors">기능</a>
         <a href="#pricing" class="hover:text-text transition-colors">가격</a>
         <a href="#faq" class="hover:text-text transition-colors">FAQ</a>
-        <div class="relative group">
+        <div class="relative" id="lang-dropdown">
           <button class="hover:text-text transition-colors flex items-center gap-1">
             KO <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="absolute right-0 top-full mt-2 bg-bg2 border border-border rounded-lg py-1 w-32 hidden group-hover:block shadow-xl">
+          <div class="absolute right-0 top-full mt-2 bg-bg2 border border-border rounded-lg py-1 w-32 hidden shadow-xl">
             <a href="/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">English</a>
             <a href="/ja/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">日本語</a>
             <a href="/zh/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">中文</a>
@@ -143,7 +143,7 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
           <h3 class="text-xl font-semibold mb-2">1회 결제 $14.99</h3>
-          <p class="text-text2">구독 없음. 월정액 없음. 한 번 결제로 Windows와 Mac에서 영구 사용. 무료 체험 포함(10,000 단어).</p>
+          <p class="text-text2">구독 없음. 월정액 없음. 한 번 결제로 Windows와 Mac에서 영구 사용. 무료 체험 포함(120분).</p>
         </div>
       </div>
     </div>
@@ -161,7 +161,7 @@
           <p class="text-text3 text-sm mb-4">구매 전에 체험해 보세요</p>
           <div class="text-4xl font-bold mb-6">$0</div>
           <ul class="space-y-3 text-sm text-text2 mb-8">
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 10,000 단어 음성 인식</li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 120분 음성 인식</li>
             <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 모든 기능 이용 가능</li>
             <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 계정 등록 불필요</li>
             <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 100% 오프라인</li>
@@ -249,7 +249,7 @@
             <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
           </div>
           <div class="faq-content px-5 pb-5 text-text2 text-sm">
-            VoiceNotes를 다운로드하면 10,000 단어 음성 인식 한도로 무료 사용이 가능합니다. 체험 기간 동안 모든 기능을 이용할 수 있습니다. 준비가 되면 $14.99(1회 결제)로 업그레이드하여 무제한으로 사용하세요.
+            VoiceNotes를 다운로드하면 120분 음성 인식 한도로 무료 사용이 가능합니다. 체험 기간 동안 모든 기능을 이용할 수 있습니다. 준비가 되면 $14.99(1회 결제)로 업그레이드하여 무제한으로 사용하세요.
           </div>
         </div>
         <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
@@ -263,11 +263,11 @@
         </div>
         <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
           <div class="flex items-center justify-between p-5">
-            <span class="font-medium">Otter.ai 등 클라우드 서비스와 비교하면 어떤가요?</span>
+            <span class="font-medium">다른 클라우드 서비스와 비교하면 어떤가요?</span>
             <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
           </div>
           <div class="faq-content px-5 pb-5 text-text2 text-sm">
-            Otter.ai(연간 $99.99) 같은 클라우드 서비스는 음성을 서버에 업로드합니다. VoiceNotes는 모든 것을 로컬에서 처리하여 더 나은 프라이버시, 반복 비용 없음, 인터넷 없이도 사용 가능합니다. 1회 $14.99 vs 연간 $99.99.
+            클라우드 서비스 A사(연간 $99.99) 같은 서비스는 음성을 서버에 업로드합니다. VoiceNotes는 모든 것을 로컬에서 처리하여 더 나은 프라이버시, 반복 비용 없음, 인터넷 없이도 사용 가능합니다. 1회 $14.99 vs 연간 $99.99.
           </div>
         </div>
       </div>
@@ -322,5 +322,6 @@
     </div>
   </footer>
 
+<script>document.querySelectorAll("#lang-dropdown button").forEach(b=>{b.addEventListener("click",e=>{e.stopPropagation();const d=b.nextElementSibling;d.classList.toggle("hidden")})});document.addEventListener("click",()=>{document.querySelectorAll("#lang-dropdown > div:last-child").forEach(d=>d.classList.add("hidden"))})</script>
 </body>
 </html>

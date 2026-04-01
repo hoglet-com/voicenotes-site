@@ -51,11 +51,11 @@
         <a href="#features" class="hover:text-text transition-colors">Features</a>
         <a href="#pricing" class="hover:text-text transition-colors">Pricing</a>
         <a href="#faq" class="hover:text-text transition-colors">FAQ</a>
-        <div class="relative group">
+        <div class="relative" id="lang-dropdown">
           <button class="hover:text-text transition-colors flex items-center gap-1">
             EN <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="absolute right-0 top-full mt-2 bg-bg2 border border-border rounded-lg py-1 w-32 hidden group-hover:block shadow-xl">
+          <div class="absolute right-0 top-full mt-2 bg-bg2 border border-border rounded-lg py-1 w-32 hidden shadow-xl">
             <a href="/" class="block px-4 py-2 text-sm text-accent">English</a>
             <a href="/ja/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">日本語</a>
             <a href="/zh/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">中文</a>
@@ -142,7 +142,7 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
           <h3 class="text-xl font-semibold mb-2">$14.99 One-Time</h3>
-          <p class="text-text2">No subscriptions. No monthly fees. Pay once, use forever on Windows and Mac. Free trial included (10,000 words).</p>
+          <p class="text-text2">No subscriptions. No monthly fees. Pay once, use forever on Windows and Mac. Free trial included (120 minutes).</p>
         </div>
       </div>
     </div>
@@ -160,7 +160,7 @@
           <p class="text-text3 text-sm mb-4">Try before you buy</p>
           <div class="text-4xl font-bold mb-6">$0</div>
           <ul class="space-y-3 text-sm text-text2 mb-8">
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 10,000 words transcription</li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 120 minutes transcription</li>
             <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> All features included</li>
             <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> No account required</li>
             <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 100% offline</li>
@@ -248,7 +248,7 @@
             <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
           </div>
           <div class="faq-content px-5 pb-5 text-text2 text-sm">
-            Download and use VoiceNotes for free with a 10,000 word transcription limit. All features are available during the trial. When you're ready, upgrade for $14.99 (one-time) for unlimited use.
+            Download and use VoiceNotes for free with a 120 minute transcription limit. All features are available during the trial. When you're ready, upgrade for $14.99 (one-time) for unlimited use.
           </div>
         </div>
         <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
@@ -262,11 +262,11 @@
         </div>
         <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
           <div class="flex items-center justify-between p-5">
-            <span class="font-medium">How does VoiceNotes compare to Otter.ai or other cloud services?</span>
+            <span class="font-medium">How does VoiceNotes compare to other cloud services?</span>
             <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
           </div>
           <div class="faq-content px-5 pb-5 text-text2 text-sm">
-            Cloud services like Otter.ai ($99.99/year) upload your audio to their servers. VoiceNotes processes everything locally — better privacy, no recurring costs, and works without internet. One-time $14.99 vs $99.99/year.
+            Cloud services like Cloud services (e.g. $99.99/year) upload your audio to their servers. VoiceNotes processes everything locally — better privacy, no recurring costs, and works without internet. One-time $14.99 vs $99.99/year.
           </div>
         </div>
       </div>
@@ -321,5 +321,6 @@
     </div>
   </footer>
 
+<script>document.querySelectorAll("#lang-dropdown button").forEach(b=>{b.addEventListener("click",e=>{e.stopPropagation();const d=b.nextElementSibling;d.classList.toggle("hidden")})});document.addEventListener("click",()=>{document.querySelectorAll("#lang-dropdown > div:last-child").forEach(d=>d.classList.add("hidden"))})</script>
 </body>
 </html>

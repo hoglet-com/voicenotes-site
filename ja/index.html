@@ -52,11 +52,11 @@
         <a href="#features" class="hover:text-text transition-colors">機能</a>
         <a href="#pricing" class="hover:text-text transition-colors">料金</a>
         <a href="#faq" class="hover:text-text transition-colors">FAQ</a>
-        <div class="relative group">
+        <div class="relative" id="lang-dropdown">
           <button class="hover:text-text transition-colors flex items-center gap-1">
             JA <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="absolute right-0 top-full mt-2 bg-bg2 border border-border rounded-lg py-1 w-32 hidden group-hover:block shadow-xl">
+          <div class="absolute right-0 top-full mt-2 bg-bg2 border border-border rounded-lg py-1 w-32 hidden shadow-xl">
             <a href="/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">English</a>
             <a href="/ja/" class="block px-4 py-2 text-sm text-accent">日本語</a>
             <a href="/zh/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">中文</a>
@@ -143,7 +143,7 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
           <h3 class="text-xl font-semibold mb-2">買い切り $14.99</h3>
-          <p class="text-text2">サブスクリプション不要。月額料金なし。一度の支払いでWindows・Macの両方で永久にご利用いただけます。無料トライアル付き（10,000語まで）。</p>
+          <p class="text-text2">サブスクリプション不要。月額料金なし。一度の支払いでWindows・Macの両方で永久にご利用いただけます。無料トライアル付き（120分まで）。</p>
         </div>
       </div>
     </div>
@@ -161,7 +161,7 @@
           <p class="text-text3 text-sm mb-4">購入前にお試しください</p>
           <div class="text-4xl font-bold mb-6">$0</div>
           <ul class="space-y-3 text-sm text-text2 mb-8">
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 10,000語まで文字起こし可能</li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 120分まで文字起こし可能</li>
             <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> すべての機能が利用可能</li>
             <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> アカウント登録不要</li>
             <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 100% オフライン</li>
@@ -249,7 +249,7 @@
             <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
           </div>
           <div class="faq-content px-5 pb-5 text-text2 text-sm">
-            VoiceNotesをダウンロードすると、10,000語の文字起こし制限付きで無料でお使いいただけます。トライアル中もすべての機能が利用可能です。気に入ったら$14.99（買い切り）にアップグレードして無制限でご利用ください。
+            VoiceNotesをダウンロードすると、120分の文字起こし制限付きで無料でお使いいただけます。トライアル中もすべての機能が利用可能です。気に入ったら$14.99（買い切り）にアップグレードして無制限でご利用ください。
           </div>
         </div>
         <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
@@ -263,11 +263,11 @@
         </div>
         <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
           <div class="flex items-center justify-between p-5">
-            <span class="font-medium">Otter.aiなどのクラウドサービスと比べてどうですか？</span>
+            <span class="font-medium">他社のクラウドサービスと比べてどうですか？</span>
             <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
           </div>
           <div class="faq-content px-5 pb-5 text-text2 text-sm">
-            Otter.ai（年間$99.99）などのクラウドサービスは音声をサーバーにアップロードします。VoiceNotesはすべてローカルで処理するため、プライバシーに優れ、継続的なコストがかからず、インターネットなしでも動作します。買い切り$14.99 vs 年間$99.99です。
+            クラウドサービスA社（年間$99.99）などは音声をサーバーにアップロードします。VoiceNotesはすべてローカルで処理するため、プライバシーに優れ、継続的なコストがかからず、インターネットなしでも動作します。買い切り$14.99 vs 年間$99.99です。
           </div>
         </div>
       </div>
@@ -322,5 +322,6 @@
     </div>
   </footer>
 
+<script>document.querySelectorAll("#lang-dropdown button").forEach(b=>{b.addEventListener("click",e=>{e.stopPropagation();const d=b.nextElementSibling;d.classList.toggle("hidden")})});document.addEventListener("click",()=>{document.querySelectorAll("#lang-dropdown > div:last-child").forEach(d=>d.classList.add("hidden"))})</script>
 </body>
 </html>

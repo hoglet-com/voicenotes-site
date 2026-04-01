@@ -52,11 +52,11 @@
         <a href="#features" class="hover:text-text transition-colors">Funciones</a>
         <a href="#pricing" class="hover:text-text transition-colors">Precios</a>
         <a href="#faq" class="hover:text-text transition-colors">FAQ</a>
-        <div class="relative group">
+        <div class="relative" id="lang-dropdown">
           <button class="hover:text-text transition-colors flex items-center gap-1">
             ES <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="absolute right-0 top-full mt-2 bg-bg2 border border-border rounded-lg py-1 w-32 hidden group-hover:block shadow-xl">
+          <div class="absolute right-0 top-full mt-2 bg-bg2 border border-border rounded-lg py-1 w-32 hidden shadow-xl">
             <a href="/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">English</a>
             <a href="/ja/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">日本語</a>
             <a href="/zh/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">中文</a>
@@ -143,7 +143,7 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
           <h3 class="text-xl font-semibold mb-2">Pago unico de $14.99</h3>
-          <p class="text-text2">Sin suscripciones. Sin cuotas mensuales. Paga una vez, usa para siempre en Windows y Mac. Prueba gratuita incluida (10,000 palabras).</p>
+          <p class="text-text2">Sin suscripciones. Sin cuotas mensuales. Paga una vez, usa para siempre en Windows y Mac. Prueba gratuita incluida (120 minutos).</p>
         </div>
       </div>
     </div>
@@ -161,7 +161,7 @@
           <p class="text-text3 text-sm mb-4">Prueba antes de comprar</p>
           <div class="text-4xl font-bold mb-6">$0</div>
           <ul class="space-y-3 text-sm text-text2 mb-8">
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 10,000 palabras de transcripcion</li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 120 minutos de transcripcion</li>
             <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Todas las funciones incluidas</li>
             <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Sin necesidad de cuenta</li>
             <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 100% sin conexion</li>
@@ -249,7 +249,7 @@
             <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
           </div>
           <div class="faq-content px-5 pb-5 text-text2 text-sm">
-            Descarga y usa VoiceNotes gratis con un limite de 10,000 palabras de transcripcion. Todas las funciones estan disponibles durante la prueba. Cuando estes listo, actualiza por $14.99 (pago unico) para uso ilimitado.
+            Descarga y usa VoiceNotes gratis con un limite de 120 minutos de transcripcion. Todas las funciones estan disponibles durante la prueba. Cuando estes listo, actualiza por $14.99 (pago unico) para uso ilimitado.
           </div>
         </div>
         <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
@@ -263,11 +263,11 @@
         </div>
         <div class="faq-item bg-bg1 border border-border rounded-xl cursor-pointer" onclick="this.classList.toggle('open')">
           <div class="flex items-center justify-between p-5">
-            <span class="font-medium">¿Como se compara VoiceNotes con Otter.ai u otros servicios en la nube?</span>
+            <span class="font-medium">¿¿Cómo se compara VoiceNotes con otros servicios en la nube?</span>
             <svg class="faq-arrow transition-transform text-text3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
           </div>
           <div class="faq-content px-5 pb-5 text-text2 text-sm">
-            Servicios en la nube como Otter.ai ($99.99/ano) suben tu audio a sus servidores. VoiceNotes procesa todo localmente — mejor privacidad, sin costos recurrentes y funciona sin internet. Un pago de $14.99 vs $99.99/ano.
+            Servicios en la nube como el servicio A ($99.99/año) suben tu audio a sus servidores. VoiceNotes procesa todo localmente — mejor privacidad, sin costos recurrentes y funciona sin internet. Un pago de $14.99 vs $99.99/ano.
           </div>
         </div>
       </div>
@@ -322,5 +322,6 @@
     </div>
   </footer>
 
+<script>document.querySelectorAll("#lang-dropdown button").forEach(b=>{b.addEventListener("click",e=>{e.stopPropagation();const d=b.nextElementSibling;d.classList.toggle("hidden")})});document.addEventListener("click",()=>{document.querySelectorAll("#lang-dropdown > div:last-child").forEach(d=>d.classList.add("hidden"))})</script>
 </body>
 </html>
