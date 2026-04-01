@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 — VoiceNotes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { bg0: '#111110', bg1: '#18181A', border: '#2C2C32', accent: '#E07820', text: '#E4E4EA', text2: '#9A9AA8', text3: '#555560' }, fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
+    }
+  </script>
+</head>
+<body class="bg-bg0 text-text font-sans">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <a href="/zh/" class="text-accent text-sm hover:underline mb-8 block">← 返回 VoiceNotes</a>
+    <h1 class="text-3xl font-bold mb-8">隐私政策</h1>
+    <p class="text-text3 text-sm mb-8">最后更新日期：2026年4月1日</p>
+
+    <div class="space-y-8 text-text2 text-sm leading-relaxed">
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">概要</h2>
+        <p class="text-accent font-medium">VoiceNotes 不会在外部服务器上收集、传输或存储您的任何数据。一切数据均保留在您的设备上。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">1. 我们不收集的数据</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>音频录音</li>
+          <li>转录文本</li>
+          <li>会议纪要</li>
+          <li>聊天消息</li>
+          <li>词典条目</li>
+          <li>使用分析或遥测数据</li>
+          <li>设备信息</li>
+          <li>IP 地址</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">2. 本地处理</h2>
+        <p>所有音频转录（通过 whisper.cpp）和 AI 处理（通过 Ollama）均完全在您的设备上本地进行。不会向任何外部服务器发送音频、文本或 AI 查询。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">3. 网络通信</h2>
+        <p>VoiceNotes 仅在以下情况下连接互联网：</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li><strong>许可证激活：</strong>通过我们的支付提供商（Polar）一次性验证您的许可证密钥。仅传输许可证密钥，不传输您的音频或文本数据。</li>
+          <li><strong>许可证验证：</strong>定期重新验证（在线时每 24 小时一次）。离线状态下可使用最长 30 天。</li>
+          <li><strong>模型下载：</strong>Whisper 模型从 HuggingFace 下载。Ollama 模型通过 Ollama 的服务器下载。这些都是用户主动发起的操作。</li>
+          <li><strong>更新检查：</strong>如果启用了自动更新，本应用将检查新版本。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">4. 数据存储</h2>
+        <p>您的所有数据均存储在您的设备本地：</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li><strong>数据库：</strong>系统应用数据文件夹中的 SQLite 文件</li>
+          <li><strong>音频/视频文件：</strong>文档文件夹中</li>
+          <li><strong>AI 模型：</strong>应用缓存文件夹中</li>
+        </ul>
+        <p class="mt-2">您可以随时通过卸载本应用并删除数据文件夹来删除所有数据。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">5. 第三方服务</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>Polar (polar.sh)：</strong>处理支付和许可证密钥发放。受 <a href="https://polar.sh/legal/terms" class="text-accent hover:underline">Polar 条款</a>约束。</li>
+          <li><strong>Ollama：</strong>在您的设备上本地运行。除模型下载外，不会向 Ollama 的服务器发送任何数据。</li>
+          <li><strong>HuggingFace：</strong>Whisper 模型从 HuggingFace 的服务器下载。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">6. 儿童隐私</h2>
+        <p>VoiceNotes 不面向 13 岁以下的儿童。我们不会故意收集儿童的任何信息。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">7. 本政策的变更</h2>
+        <p>我们可能会不时更新本隐私政策。最新版本始终可在 <a href="https://voice-notes.org/privacy" class="text-accent hover:underline">voice-notes.org/privacy</a> 查阅。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">8. 联系方式</h2>
+        <p>如对本隐私政策有任何疑问，请访问 <a href="https://voice-notes.org" class="text-accent hover:underline">voice-notes.org</a>。</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

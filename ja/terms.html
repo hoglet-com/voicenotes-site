@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>利用規約 — VoiceNotes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { bg0: '#111110', bg1: '#18181A', border: '#2C2C32', accent: '#E07820', text: '#E4E4EA', text2: '#9A9AA8', text3: '#555560' }, fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
+    }
+  </script>
+</head>
+<body class="bg-bg0 text-text font-sans">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <a href="/ja/" class="text-accent text-sm hover:underline mb-8 block">← VoiceNotes に戻る</a>
+    <h1 class="text-3xl font-bold mb-8">利用規約</h1>
+    <p class="text-text3 text-sm mb-8">最終更新日: 2026年4月1日</p>
+
+    <div class="space-y-8 text-text2 text-sm leading-relaxed">
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">1. 規約への同意</h2>
+        <p>VoiceNotes（以下「本アプリ」）をダウンロード、インストール、または使用することにより、お客様は本利用規約に同意したものとみなされます。同意いただけない場合は、本アプリを使用しないでください。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">2. サービスの説明</h2>
+        <p>VoiceNotes は、オフラインでの音声文字起こし、AIによる議事録自動生成、およびAIチャット機能を備えたデスクトップアプリケーションです。すべての音声処理はお客様のデバイス上でローカルに実行されます。音声データが外部サーバーに送信されることはありません。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">3. ライセンス</h2>
+        <p>VoiceNotes は買い切り型のアプリケーションです。無料トライアルでは最大120分の文字起こしが可能です。ライセンスを購入すると、購入時に指定されたデバイス数で無制限にご利用いただけます。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">4. サードパーティ製AIモデル</h2>
+        <p><strong>VoiceNotes は Ollama を使用してAIモデルをお客様のデバイス上でローカルに実行します。</strong>これらのAIモデル（Gemma、Qwen、LLaMA、Mistral など）はサードパーティによって開発されており、それぞれ独自のライセンスおよび利用規約が適用されます。</p>
+        <p class="mt-2"><strong>Ollama を通じてダウンロード・使用するAIモデルのライセンス条項を確認し、遵守することはお客様の責任です。</strong>VoiceNotes はこれらのモデルの配布、改変、ホスティングを行いません。本アプリは、お客様がインストールを選択したモデルとのインターフェースを提供するのみです。</p>
+        <p class="mt-2">一部のモデルには、商用利用、出力の使用、または地理的な利用可能性に制限がある場合があります。ユーザーによるサードパーティ製モデルのライセンス違反について、VoiceNotes は一切の責任を負いません。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">5. Whisper 音声認識</h2>
+        <p>VoiceNotes は、OpenAI の Whisper モデルのオープンソース実装である whisper.cpp を音声テキスト変換に使用しています。whisper.cpp は MIT ライセンスの下で提供されています。Whisper モデルには OpenAI のライセンス条項が適用されます。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">6. 録音の合法性</h2>
+        <p>VoiceNotes はボイスレコーダーやビデオプレーヤーと同様のツールです。<strong>本アプリの使用が適用されるすべての法律に準拠していることを確認するのは、お客様の責任です。</strong>以下の法律を含みますが、これらに限定されません：</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>会話録音に関する同意</li>
+          <li>職場での録音に関するポリシー</li>
+          <li>データ保護規制（GDPR、個人情報保護法など）</li>
+          <li>盗聴および傍受に関する法律</li>
+        </ul>
+        <p class="mt-2">VoiceNotes は法的アドバイスを提供しません。お客様の管轄区域における録音の合法性について不明な場合は、法律の専門家にご相談ください。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">7. データの所有権</h2>
+        <p>本アプリで作成されたすべてのデータ（録音、文字起こし、議事録、チャットメッセージ）はお客様に帰属します。VoiceNotes はお客様のデータにアクセス、収集、または送信することはありません。すべての処理はお客様のデバイス上でローカルに実行されます。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">8. 無保証</h2>
+        <p>VoiceNotes は「現状のまま」提供され、いかなる種類の保証もありません。文字起こしの精度は、音声品質、言語、およびモデルの選択によって異なります。AIが生成した議事録には誤りや漏れが含まれる場合があります。重要な情報は必ずご確認ください。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">9. 責任の制限</h2>
+        <p>法律で認められる最大限の範囲において、VoiceNotes およびその開発者は、本アプリの使用に起因する間接的、偶発的、特別、結果的、または懲罰的な損害について一切の責任を負いません。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">10. オープンソースコンポーネント</h2>
+        <p>VoiceNotes は以下のオープンソースコンポーネントを使用しています：</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>OpenWhispr — MIT License</li>
+          <li>whisper.cpp — MIT License</li>
+          <li>FFmpeg — LGPL License</li>
+          <li>Electron — MIT License</li>
+          <li>Ollama — MIT License</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">11. 規約の変更</h2>
+        <p>本規約は随時更新される場合があります。最新版は常に <a href="https://voice-notes.org/terms" class="text-accent hover:underline">voice-notes.org/terms</a> でご確認いただけます。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">12. お問い合わせ</h2>
+        <p>本利用規約に関するご質問は、<a href="https://voice-notes.org" class="text-accent hover:underline">voice-notes.org</a> をご覧ください。</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

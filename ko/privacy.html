@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보 처리방침 — VoiceNotes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { bg0: '#111110', bg1: '#18181A', border: '#2C2C32', accent: '#E07820', text: '#E4E4EA', text2: '#9A9AA8', text3: '#555560' }, fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
+    }
+  </script>
+</head>
+<body class="bg-bg0 text-text font-sans">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <a href="/ko/" class="text-accent text-sm hover:underline mb-8 block">← VoiceNotes로 돌아가기</a>
+    <h1 class="text-3xl font-bold mb-8">개인정보 처리방침</h1>
+    <p class="text-text3 text-sm mb-8">최종 업데이트: 2026년 4월 1일</p>
+
+    <div class="space-y-8 text-text2 text-sm leading-relaxed">
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">요약</h2>
+        <p class="text-accent font-medium">VoiceNotes는 귀하의 데이터를 외부 서버에 수집, 전송 또는 저장하지 않습니다. 모든 데이터는 귀하의 기기에 보관됩니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">1. 수집하지 않는 데이터</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>오디오 녹음</li>
+          <li>전사 텍스트</li>
+          <li>회의록</li>
+          <li>채팅 메시지</li>
+          <li>사전 항목</li>
+          <li>사용 분석 또는 텔레메트리</li>
+          <li>기기 정보</li>
+          <li>IP 주소</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">2. 로컬 처리</h2>
+        <p>모든 오디오 전사(whisper.cpp 사용) 및 AI 처리(Ollama 사용)는 전적으로 귀하의 기기에서 로컬로 수행됩니다. 오디오, 텍스트 또는 AI 쿼리가 외부 서버로 전송되지 않습니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">3. 네트워크 통신</h2>
+        <p>VoiceNotes가 인터넷에 연결되는 경우는 다음과 같습니다:</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li><strong>라이선스 활성화:</strong> 결제 제공업체(Polar)를 통한 라이선스 키의 일회성 확인. 라이선스 키만 전송되며 오디오나 텍스트 데이터는 전송되지 않습니다.</li>
+          <li><strong>라이선스 검증:</strong> 정기적인 재확인(온라인 시 24시간마다). 오프라인 상태에서 최대 30일간 작동합니다.</li>
+          <li><strong>모델 다운로드:</strong> Whisper 모델은 HuggingFace에서 다운로드됩니다. Ollama 모델은 Ollama 서버를 통해 다운로드됩니다. 이는 사용자가 직접 시작하는 작업입니다.</li>
+          <li><strong>업데이트 확인:</strong> 자동 업데이트가 활성화된 경우 본 앱이 새 버전을 확인합니다.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">4. 데이터 저장</h2>
+        <p>귀하의 모든 데이터는 기기에 로컬로 저장됩니다:</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li><strong>데이터베이스:</strong> 시스템 앱 데이터 폴더의 SQLite 파일</li>
+          <li><strong>오디오/비디오 파일:</strong> 문서 폴더 내</li>
+          <li><strong>AI 모델:</strong> 앱 캐시 폴더 내</li>
+        </ul>
+        <p class="mt-2">본 앱을 제거하고 데이터 폴더를 삭제하면 언제든지 모든 데이터를 삭제할 수 있습니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">5. 서드파티 서비스</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>Polar (polar.sh):</strong> 결제 처리 및 라이선스 키 발급을 담당합니다. <a href="https://polar.sh/legal/terms" class="text-accent hover:underline">Polar 이용약관</a>이 적용됩니다.</li>
+          <li><strong>Ollama:</strong> 귀하의 기기에서 로컬로 실행됩니다. 모델 다운로드 시를 제외하고 Ollama 서버로 데이터가 전송되지 않습니다.</li>
+          <li><strong>HuggingFace:</strong> Whisper 모델은 HuggingFace 서버에서 다운로드됩니다.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">6. 아동 개인정보 보호</h2>
+        <p>VoiceNotes는 13세 미만의 아동을 대상으로 하지 않습니다. 아동의 정보를 고의로 수집하지 않습니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">7. 본 방침의 변경</h2>
+        <p>본 개인정보 처리방침은 수시로 업데이트될 수 있습니다. 최신 버전은 항상 <a href="https://voice-notes.org/privacy" class="text-accent hover:underline">voice-notes.org/privacy</a>에서 확인할 수 있습니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">8. 문의</h2>
+        <p>본 개인정보 처리방침에 관한 질문은 <a href="https://voice-notes.org" class="text-accent hover:underline">voice-notes.org</a>를 방문해 주십시오.</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

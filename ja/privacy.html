@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー — VoiceNotes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { bg0: '#111110', bg1: '#18181A', border: '#2C2C32', accent: '#E07820', text: '#E4E4EA', text2: '#9A9AA8', text3: '#555560' }, fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
+    }
+  </script>
+</head>
+<body class="bg-bg0 text-text font-sans">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <a href="/ja/" class="text-accent text-sm hover:underline mb-8 block">← VoiceNotes に戻る</a>
+    <h1 class="text-3xl font-bold mb-8">プライバシーポリシー</h1>
+    <p class="text-text3 text-sm mb-8">最終更新日: 2026年4月1日</p>
+
+    <div class="space-y-8 text-text2 text-sm leading-relaxed">
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">概要</h2>
+        <p class="text-accent font-medium">VoiceNotes は、お客様のデータを外部サーバーに収集、送信、または保存することはありません。すべてのデータはお客様のデバイス上に保持されます。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">1. 収集しないデータ</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>音声録音</li>
+          <li>文字起こしテキスト</li>
+          <li>議事録</li>
+          <li>チャットメッセージ</li>
+          <li>辞書エントリ</li>
+          <li>使用状況の分析やテレメトリ</li>
+          <li>デバイス情報</li>
+          <li>IPアドレス</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">2. ローカル処理</h2>
+        <p>すべての音声文字起こし（whisper.cpp 経由）およびAI処理（Ollama 経由）は、お客様のデバイス上で完全にローカルに実行されます。音声、テキスト、AIクエリが外部サーバーに送信されることはありません。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">3. ネットワーク通信</h2>
+        <p>VoiceNotes がインターネットに接続するのは以下の場合のみです：</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li><strong>ライセンス認証：</strong>決済プロバイダー（Polar）でのライセンスキーの一回限りの検証。送信されるのはライセンスキーのみであり、音声やテキストデータは送信されません。</li>
+          <li><strong>ライセンス検証：</strong>定期的な再検証（オンライン時に24時間ごと）。オフラインでも最大30日間使用可能です。</li>
+          <li><strong>モデルのダウンロード：</strong>Whisper モデルは HuggingFace からダウンロードされます。Ollama モデルは Ollama のサーバーからダウンロードされます。これらはユーザーが開始する操作です。</li>
+          <li><strong>アップデートの確認：</strong>自動更新が有効な場合、本アプリは新しいバージョンを確認します。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">4. データの保存</h2>
+        <p>お客様のすべてのデータは、デバイス上にローカルに保存されます：</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li><strong>データベース：</strong>システムのアプリデータフォルダ内の SQLite ファイル</li>
+          <li><strong>音声/動画ファイル：</strong>ドキュメントフォルダ内</li>
+          <li><strong>AIモデル：</strong>アプリのキャッシュフォルダ内</li>
+        </ul>
+        <p class="mt-2">本アプリをアンインストールし、データフォルダを削除することで、いつでもすべてのデータを削除できます。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">5. サードパーティサービス</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>Polar (polar.sh)：</strong>決済処理およびライセンスキーの発行を行います。<a href="https://polar.sh/legal/terms" class="text-accent hover:underline">Polar の利用規約</a>が適用されます。</li>
+          <li><strong>Ollama：</strong>お客様のデバイス上でローカルに実行されます。モデルのダウンロード時を除き、Ollama のサーバーにデータが送信されることはありません。</li>
+          <li><strong>HuggingFace：</strong>Whisper モデルは HuggingFace のサーバーからダウンロードされます。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">6. 児童のプライバシー</h2>
+        <p>VoiceNotes は13歳未満の児童を対象としていません。児童から故意に情報を収集することはありません。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">7. 本ポリシーの変更</h2>
+        <p>本プライバシーポリシーは随時更新される場合があります。最新版は常に <a href="https://voice-notes.org/privacy" class="text-accent hover:underline">voice-notes.org/privacy</a> でご確認いただけます。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">8. お問い合わせ</h2>
+        <p>本プライバシーポリシーに関するご質問は、<a href="https://voice-notes.org" class="text-accent hover:underline">voice-notes.org</a> をご覧ください。</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

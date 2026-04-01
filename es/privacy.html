@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — VoiceNotes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { bg0: '#111110', bg1: '#18181A', border: '#2C2C32', accent: '#E07820', text: '#E4E4EA', text2: '#9A9AA8', text3: '#555560' }, fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
+    }
+  </script>
+</head>
+<body class="bg-bg0 text-text font-sans">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <a href="/es/" class="text-accent text-sm hover:underline mb-8 block">← Volver a VoiceNotes</a>
+    <h1 class="text-3xl font-bold mb-8">Política de Privacidad</h1>
+    <p class="text-text3 text-sm mb-8">Última actualización: 1 de abril de 2026</p>
+
+    <div class="space-y-8 text-text2 text-sm leading-relaxed">
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">Resumen</h2>
+        <p class="text-accent font-medium">VoiceNotes no recopila, transmite ni almacena ninguno de sus datos en servidores externos. Todo permanece en su dispositivo.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">1. Datos que NO Recopilamos</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Grabaciones de audio</li>
+          <li>Texto de transcripción</li>
+          <li>Actas de reuniones</li>
+          <li>Mensajes de chat</li>
+          <li>Entradas del diccionario</li>
+          <li>Análisis de uso o telemetría</li>
+          <li>Información del dispositivo</li>
+          <li>Direcciones IP</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">2. Procesamiento Local</h2>
+        <p>Toda la transcripción de audio (mediante whisper.cpp) y el procesamiento de IA (mediante Ollama) se realizan completamente en su dispositivo. No se envían datos de audio, texto ni consultas de IA a ningún servidor externo.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">3. Comunicación de Red</h2>
+        <p>VoiceNotes se conecta a Internet únicamente para:</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li><strong>Activación de licencia:</strong> Una verificación única de su clave de licencia con nuestro proveedor de pagos (Polar). Solo se transmite la clave de licencia, no sus datos de audio o texto.</li>
+          <li><strong>Validación de licencia:</strong> Reverificación periódica (cada 24 horas cuando está en línea). Funciona sin conexión hasta por 30 días.</li>
+          <li><strong>Descarga de modelos:</strong> Los modelos Whisper se descargan desde HuggingFace. Los modelos Ollama se descargan a través de los servidores de Ollama. Estas son acciones iniciadas por el usuario.</li>
+          <li><strong>Verificación de actualizaciones:</strong> Si la actualización automática está habilitada, la Aplicación busca nuevas versiones.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">4. Almacenamiento de Datos</h2>
+        <p>Todos sus datos se almacenan localmente en su dispositivo:</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li><strong>Base de datos:</strong> Archivo SQLite en la carpeta de datos de la aplicación del sistema</li>
+          <li><strong>Archivos de audio/vídeo:</strong> En su carpeta Documentos</li>
+          <li><strong>Modelos de IA:</strong> En la carpeta de caché de la aplicación</li>
+        </ul>
+        <p class="mt-2">Puede eliminar todos los datos en cualquier momento desinstalando la Aplicación y eliminando las carpetas de datos.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">5. Servicios de Terceros</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>Polar (polar.sh):</strong> Gestiona el procesamiento de pagos y la emisión de claves de licencia. Sujeto a los <a href="https://polar.sh/legal/terms" class="text-accent hover:underline">Términos de Polar</a>.</li>
+          <li><strong>Ollama:</strong> Se ejecuta localmente en su dispositivo. No se envían datos a los servidores de Ollama excepto durante la descarga de modelos.</li>
+          <li><strong>HuggingFace:</strong> Los modelos Whisper se descargan desde los servidores de HuggingFace.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">6. Privacidad de los Menores</h2>
+        <p>VoiceNotes no está dirigido a menores de 13 años. No recopilamos conscientemente información de menores.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">7. Cambios en esta Política</h2>
+        <p>Podemos actualizar esta Política de Privacidad periódicamente. La versión más reciente estará siempre disponible en <a href="https://voice-notes.org/privacy" class="text-accent hover:underline">voice-notes.org/privacy</a>.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">8. Contacto</h2>
+        <p>Para preguntas sobre esta Política de Privacidad, visite <a href="https://voice-notes.org" class="text-accent hover:underline">voice-notes.org</a>.</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

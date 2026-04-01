@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>使用条款 — VoiceNotes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { bg0: '#111110', bg1: '#18181A', border: '#2C2C32', accent: '#E07820', text: '#E4E4EA', text2: '#9A9AA8', text3: '#555560' }, fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
+    }
+  </script>
+</head>
+<body class="bg-bg0 text-text font-sans">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <a href="/zh/" class="text-accent text-sm hover:underline mb-8 block">← 返回 VoiceNotes</a>
+    <h1 class="text-3xl font-bold mb-8">使用条款</h1>
+    <p class="text-text3 text-sm mb-8">最后更新日期：2026年4月1日</p>
+
+    <div class="space-y-8 text-text2 text-sm leading-relaxed">
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">1. 条款接受</h2>
+        <p>下载、安装或使用 VoiceNotes（以下简称"本应用"）即表示您同意本使用条款。如果您不同意，请勿使用本应用。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">2. 服务说明</h2>
+        <p>VoiceNotes 是一款桌面应用程序，支持离线语音转文字、AI 驱动的会议纪要生成以及 AI 聊天功能。所有音频处理均在您的设备上本地进行，不会将任何音频数据传输到外部服务器。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">3. 许可证</h2>
+        <p>VoiceNotes 采用一次性购买模式。免费试用版允许最多 120 分钟的转录。购买许可证后，您可以在购买时指定的设备数量上无限制使用。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">4. 第三方 AI 模型</h2>
+        <p><strong>VoiceNotes 使用 Ollama 在您的设备上本地运行 AI 模型。</strong>这些 AI 模型（如 Gemma、Qwen、LLaMA、Mistral 等）由第三方开发，受其各自的许可证和使用条款约束。</p>
+        <p class="mt-2"><strong>用户有责任审查并遵守通过 Ollama 下载和使用的任何 AI 模型的许可条款。</strong>VoiceNotes 不分发、修改或托管这些模型。本应用仅提供与您选择安装的模型进行交互的界面。</p>
+        <p class="mt-2">部分模型可能对商业使用、输出使用或地区可用性有所限制。VoiceNotes 不对用户违反第三方模型许可证的行为承担任何责任。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">5. Whisper 语音识别</h2>
+        <p>VoiceNotes 使用 whisper.cpp（OpenAI Whisper 模型的开源实现）进行语音转文字。whisper.cpp 基于 MIT 许可证发布。Whisper 模型受 OpenAI 许可条款约束。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">6. 录音合法性</h2>
+        <p>VoiceNotes 是一种工具，类似于录音机或视频播放器。<strong>确保使用本应用符合所有适用法律是用户的全部责任</strong>，包括但不限于以下方面的法律：</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>录音对话的同意要求</li>
+          <li>工作场所录音政策</li>
+          <li>数据保护法规（GDPR、CCPA 等）</li>
+          <li>窃听和监听法律</li>
+        </ul>
+        <p class="mt-2">VoiceNotes 不提供法律建议。如果您不确定在您所在辖区录音是否合法，请咨询法律专业人士。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">7. 数据所有权</h2>
+        <p>本应用创建的所有数据（录音、转录文本、会议纪要、聊天消息）均归您所有。VoiceNotes 不会访问、收集或传输您的数据。所有处理均在您的设备上本地进行。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">8. 免责声明</h2>
+        <p>VoiceNotes 按"原样"提供，不附带任何形式的保证。转录准确性取决于音频质量、语言和模型选择。AI 生成的会议纪要可能包含错误或遗漏。请务必验证重要信息。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">9. 责任限制</h2>
+        <p>在法律允许的最大范围内，VoiceNotes 及其开发者不对因您使用本应用而产生的任何间接、附带、特殊、后果性或惩罚性损害承担责任。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">10. 开源组件</h2>
+        <p>VoiceNotes 包含以下开源组件：</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>OpenWhispr — MIT License</li>
+          <li>whisper.cpp — MIT License</li>
+          <li>FFmpeg — LGPL License</li>
+          <li>Electron — MIT License</li>
+          <li>Ollama — MIT License</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">11. 条款变更</h2>
+        <p>我们可能会不时更新本条款。最新版本始终可在 <a href="https://voice-notes.org/terms" class="text-accent hover:underline">voice-notes.org/terms</a> 查阅。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">12. 联系方式</h2>
+        <p>如对本条款有任何疑问，请访问 <a href="https://voice-notes.org" class="text-accent hover:underline">voice-notes.org</a>。</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

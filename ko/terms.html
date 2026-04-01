@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이용약관 — VoiceNotes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { bg0: '#111110', bg1: '#18181A', border: '#2C2C32', accent: '#E07820', text: '#E4E4EA', text2: '#9A9AA8', text3: '#555560' }, fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
+    }
+  </script>
+</head>
+<body class="bg-bg0 text-text font-sans">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <a href="/ko/" class="text-accent text-sm hover:underline mb-8 block">← VoiceNotes로 돌아가기</a>
+    <h1 class="text-3xl font-bold mb-8">이용약관</h1>
+    <p class="text-text3 text-sm mb-8">최종 업데이트: 2026년 4월 1일</p>
+
+    <div class="space-y-8 text-text2 text-sm leading-relaxed">
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">1. 약관 동의</h2>
+        <p>VoiceNotes(이하 "본 앱")를 다운로드, 설치 또는 사용함으로써 귀하는 본 이용약관에 동의하는 것으로 간주됩니다. 동의하지 않는 경우 본 앱을 사용하지 마십시오.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">2. 서비스 설명</h2>
+        <p>VoiceNotes는 오프라인 음성 전사, AI 기반 회의록 생성 및 AI 채팅 기능을 제공하는 데스크톱 애플리케이션입니다. 모든 오디오 처리는 귀하의 기기에서 로컬로 수행됩니다. 오디오 데이터가 외부 서버로 전송되지 않습니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">3. 라이선스</h2>
+        <p>VoiceNotes는 일회성 구매 방식으로 제공됩니다. 무료 체험판은 최대 120분의 전사를 허용합니다. 라이선스를 구매하면 구매 시 지정된 기기 수에서 무제한으로 사용할 수 있습니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">4. 서드파티 AI 모델</h2>
+        <p><strong>VoiceNotes는 Ollama를 사용하여 귀하의 기기에서 AI 모델을 로컬로 실행합니다.</strong> 이러한 AI 모델(Gemma, Qwen, LLaMA, Mistral 등)은 서드파티에 의해 개발되었으며 각각의 라이선스 및 이용약관이 적용됩니다.</p>
+        <p class="mt-2"><strong>Ollama를 통해 다운로드하고 사용하는 모든 AI 모델의 라이선스 조항을 검토하고 준수하는 것은 사용자의 책임입니다.</strong> VoiceNotes는 이러한 모델을 배포, 수정 또는 호스팅하지 않습니다. 본 앱은 귀하가 설치를 선택한 모델과 상호작용할 수 있는 인터페이스만 제공합니다.</p>
+        <p class="mt-2">일부 모델은 상업적 사용, 출력물 사용 또는 지역 가용성에 제한이 있을 수 있습니다. 사용자의 서드파티 모델 라이선스 위반에 대해 VoiceNotes는 책임을 지지 않습니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">5. Whisper 음성 인식</h2>
+        <p>VoiceNotes는 OpenAI Whisper 모델의 오픈소스 구현체인 whisper.cpp를 음성-텍스트 전사에 사용합니다. whisper.cpp는 MIT 라이선스로 제공됩니다. Whisper 모델에는 OpenAI의 라이선스 조항이 적용됩니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">6. 녹음의 적법성</h2>
+        <p>VoiceNotes는 녹음기나 비디오 플레이어와 유사한 도구입니다. <strong>본 앱의 사용이 모든 관련 법률을 준수하는지 확인하는 것은 전적으로 사용자의 책임입니다.</strong> 이에는 다음을 포함하되 이에 국한되지 않습니다:</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>대화 녹음에 대한 동의</li>
+          <li>직장 내 녹음 정책</li>
+          <li>데이터 보호 규정(GDPR, CCPA 등)</li>
+          <li>도청 및 감청 관련 법률</li>
+        </ul>
+        <p class="mt-2">VoiceNotes는 법률 자문을 제공하지 않습니다. 귀하의 관할 지역에서 녹음의 적법성이 불확실한 경우 법률 전문가에게 문의하십시오.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">7. 데이터 소유권</h2>
+        <p>본 앱에서 생성된 모든 데이터(녹음, 전사 텍스트, 회의록, 채팅 메시지)는 귀하에게 귀속됩니다. VoiceNotes는 귀하의 데이터에 접근, 수집 또는 전송하지 않습니다. 모든 처리는 귀하의 기기에서 로컬로 수행됩니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">8. 보증 부인</h2>
+        <p>VoiceNotes는 어떠한 종류의 보증 없이 "있는 그대로" 제공됩니다. 전사 정확도는 오디오 품질, 언어 및 모델 선택에 따라 달라집니다. AI가 생성한 회의록에는 오류나 누락이 포함될 수 있습니다. 중요한 정보는 반드시 확인하십시오.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">9. 책임 제한</h2>
+        <p>법률이 허용하는 최대 범위 내에서, VoiceNotes 및 그 개발자는 본 앱 사용으로 인해 발생하는 간접적, 우발적, 특별, 결과적 또는 징벌적 손해에 대해 책임을 지지 않습니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">10. 오픈소스 구성요소</h2>
+        <p>VoiceNotes는 다음 오픈소스 구성요소를 포함합니다:</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>OpenWhispr — MIT License</li>
+          <li>whisper.cpp — MIT License</li>
+          <li>FFmpeg — LGPL License</li>
+          <li>Electron — MIT License</li>
+          <li>Ollama — MIT License</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">11. 약관 변경</h2>
+        <p>본 약관은 수시로 업데이트될 수 있습니다. 최신 버전은 항상 <a href="https://voice-notes.org/terms" class="text-accent hover:underline">voice-notes.org/terms</a>에서 확인할 수 있습니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">12. 문의</h2>
+        <p>본 이용약관에 관한 질문은 <a href="https://voice-notes.org" class="text-accent hover:underline">voice-notes.org</a>를 방문해 주십시오.</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
