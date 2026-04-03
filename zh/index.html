@@ -13,7 +13,7 @@
   <link rel="alternate" hreflang="ko" href="https://voice-notes.org/ko/">
   <link rel="alternate" hreflang="es" href="https://voice-notes.org/es/">
   <link rel="alternate" hreflang="x-default" href="https://voice-notes.org/">
-  <script src="https://cdn.tailwindcss.com">;(function(){const track=document.querySelector(".carousel-track");const dots=document.querySelectorAll(".carousel-dot");if(!track||!dots.length)return;let idx=0;const total=track.children.length;function go(i){idx=i;track.style.transform="translateX(-"+idx*100+"%)";dots.forEach((d,j)=>d.className="carousel-dot w-2 h-2 rounded-full "+(j===idx?"bg-accent":"bg-text3/30"))}dots.forEach(d=>d.addEventListener("click",()=>go(+d.dataset.index)));setInterval(()=>go((idx+1)%total),4000)})()
+  <script src="https://cdn.tailwindcss.com">
 </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -330,6 +330,8 @@
     </div>
   </footer>
 
-<script>document.querySelectorAll("#lang-dropdown button").forEach(b=>{b.addEventListener("click",e=>{e.stopPropagation();const d=b.nextElementSibling;d.classList.toggle("hidden")})});document.addEventListener("click",()=>{document.querySelectorAll("#lang-dropdown > div:last-child").forEach(d=>d.classList.add("hidden"))})</script>
+<script>document.querySelectorAll("#lang-dropdown button").forEach(b=>{b.addEventListener("click",e=>{e.stopPropagation();const d=b.nextElementSibling;d.classList.toggle("hidden")})});document.addEventListener("click",()=>{document.querySelectorAll("#lang-dropdown > div:last-child").forEach(d=>d.classList.add("hidden"))})
+;(function(){const track=document.querySelector(".carousel-track");const dots=document.querySelectorAll(".carousel-dot");if(!track||!dots.length)return;let idx=0;const total=track.children.length;function go(i){idx=i;track.style.transform="translateX(-"+idx*100+"%)";dots.forEach((d,j)=>d.className="carousel-dot w-2 h-2 rounded-full "+(j===idx?"bg-accent":"bg-text3/30"))}dots.forEach(d=>d.addEventListener("click",()=>go(+d.dataset.index)));setInterval(()=>go((idx+1)%total),4000)})()
+</script>
 </body>
 </html>
