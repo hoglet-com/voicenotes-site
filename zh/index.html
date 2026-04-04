@@ -7,12 +7,12 @@
   <title>VoiceNotes — Windows 和 Mac 离线 AI 语音转文字</title>
   <meta name="description" content="完全离线的语音转文字工具。无需上传云端，无需订阅。AI 会议纪要与智能对话功能。一次性购买仅需 $14.99。">
   <link rel="canonical" href="https://voice-notes.org/zh/">
-  <link rel="alternate" hreflang="en" href="https://voice-notes.org/">
+  <link rel="alternate" hreflang="en" href="https://voice-notes.org/en/">
   <link rel="alternate" hreflang="ja" href="https://voice-notes.org/ja/">
   <link rel="alternate" hreflang="zh" href="https://voice-notes.org/zh/">
   <link rel="alternate" hreflang="ko" href="https://voice-notes.org/ko/">
   <link rel="alternate" hreflang="es" href="https://voice-notes.org/es/">
-  <link rel="alternate" hreflang="x-default" href="https://voice-notes.org/">
+  <link rel="alternate" hreflang="x-default" href="https://voice-notes.org/en/">
   <script src="https://cdn.tailwindcss.com">
 </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,11 +57,11 @@
             ZH <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
           </button>
           <div class="absolute right-0 top-full mt-2 bg-bg2 border border-border rounded-lg py-1 w-32 hidden shadow-xl">
-            <a href="/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">English</a>
-            <a href="/ja/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">日本語</a>
-            <a href="/zh/" class="block px-4 py-2 text-sm text-accent">中文</a>
-            <a href="/ko/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">한국어</a>
-            <a href="/es/" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">Español</a>
+            <a href="/en/" onclick="localStorage.setItem('voicenotes-lang','en')" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">English</a>
+            <a href="/ja/" onclick="localStorage.setItem('voicenotes-lang','ja')" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">日本語</a>
+            <a href="/zh/" onclick="localStorage.setItem('voicenotes-lang','zh')" class="block px-4 py-2 text-sm text-accent">中文</a>
+            <a href="/ko/" onclick="localStorage.setItem('voicenotes-lang','ko')" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">한국어</a>
+            <a href="/es/" onclick="localStorage.setItem('voicenotes-lang','es')" class="block px-4 py-2 text-sm text-text2 hover:text-text hover:bg-bg3">Español</a>
           </div>
         </div>
       </nav>
