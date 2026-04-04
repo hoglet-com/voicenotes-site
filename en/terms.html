@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use — VoiceNotes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { bg0: '#111110', bg1: '#18181A', border: '#2C2C32', accent: '#E07820', text: '#E4E4EA', text2: '#9A9AA8', text3: '#555560' }, fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
+    }
+  </script>
+</head>
+<body class="bg-bg0 text-text font-sans">
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <a href="/" class="text-accent text-sm hover:underline mb-8 block">← Back to VoiceNotes</a>
+    <h1 class="text-3xl font-bold mb-8">Terms of Use</h1>
+    <p class="text-text3 text-sm mb-8">Last updated: April 1, 2026</p>
+
+    <div class="space-y-8 text-text2 text-sm leading-relaxed">
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">1. Acceptance of Terms</h2>
+        <p>By downloading, installing, or using VoiceNotes ("the App"), you agree to these Terms of Use. If you do not agree, do not use the App.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">2. Description of Service</h2>
+        <p>VoiceNotes is a desktop application for offline voice transcription, AI-powered meeting minutes generation, and AI chat. All audio processing occurs locally on your device. No audio data is transmitted to external servers.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">3. License</h2>
+        <p>VoiceNotes is available as a one-time purchase. The free trial allows up to 120 minutes of transcription. Purchasing a license grants you unlimited use on the number of devices specified at the time of purchase.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">4. Third-Party AI Models</h2>
+        <p><strong>VoiceNotes uses Ollama to run AI models locally on your device.</strong> These AI models (such as Gemma, Qwen, LLaMA, Mistral, etc.) are developed by third parties and are subject to their own licenses and terms of use.</p>
+        <p class="mt-2"><strong>It is the user's responsibility to review and comply with the license terms of any AI model they download and use through Ollama.</strong> VoiceNotes does not distribute, modify, or host these models. The App merely provides an interface to interact with models that you choose to install.</p>
+        <p class="mt-2">Some models may have restrictions on commercial use, output usage, or geographic availability. VoiceNotes is not responsible for any violation of third-party model licenses by the user.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">5. Whisper Speech Recognition</h2>
+        <p>VoiceNotes uses whisper.cpp, an open-source implementation of OpenAI's Whisper model, for speech-to-text transcription. whisper.cpp is licensed under the MIT License. The Whisper models are subject to OpenAI's license terms.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">6. Recording Legality</h2>
+        <p>VoiceNotes is a tool, similar to a voice recorder or video player. <strong>It is the user's sole responsibility to ensure that their use of the App complies with all applicable laws</strong>, including but not limited to laws regarding:</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>Consent for recording conversations</li>
+          <li>Workplace recording policies</li>
+          <li>Data protection regulations (GDPR, CCPA, etc.)</li>
+          <li>Wiretapping and eavesdropping laws</li>
+        </ul>
+        <p class="mt-2">VoiceNotes does not provide legal advice. Consult a legal professional if you are unsure about the legality of recording in your jurisdiction.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">7. Data Ownership</h2>
+        <p>All data created by the App (recordings, transcriptions, meeting minutes, chat messages) belongs to you. VoiceNotes does not access, collect, or transmit your data. All processing occurs locally on your device.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">8. No Warranty</h2>
+        <p>VoiceNotes is provided "as is" without warranty of any kind. Transcription accuracy depends on audio quality, language, and model selection. AI-generated meeting minutes may contain errors or omissions. Always verify important information.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">9. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, VoiceNotes and its developers shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the App.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">10. Open Source Components</h2>
+        <p>VoiceNotes incorporates the following open-source components:</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>OpenWhispr — MIT License</li>
+          <li>whisper.cpp — MIT License</li>
+          <li>FFmpeg — LGPL License</li>
+          <li>Electron — MIT License</li>
+          <li>Ollama — MIT License</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">11. Changes to Terms</h2>
+        <p>We may update these Terms from time to time. The latest version will always be available at <a href="https://voice-notes.org/terms" class="text-accent hover:underline">voice-notes.org/terms</a>.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-text mb-3">12. Contact</h2>
+        <p>For questions about these Terms, please visit <a href="https://voice-notes.org" class="text-accent hover:underline">voice-notes.org</a>.</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
