@@ -6,6 +6,11 @@
       "source": "/download/windows{/}?",
       "destination": "https://github.com/voicenotes-app/voicenotes-site/releases/download/v0.2.0-trial/VoiceNotes.Setup.0.2.0.exe",
       "statusCode": 302
+    },
+    {
+      "source": "/download/mac{/}?",
+      "destination": "https://github.com/voicenotes-app/voicenotes-site/releases/download/v0.2.0/VoiceNotes-0.2.0-arm64.dmg",
+      "statusCode": 302
     }
   ]
 }
