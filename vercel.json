@@ -9,7 +9,7 @@
     },
     {
       "source": "/download/mac{/}?",
-      "destination": "https://github.com/voicenotes-app/voicenotes-site/releases/download/v0.2.0/VoiceNotes-0.2.0-arm64.dmg",
+      "destination": "https://github.com/voicenotes-app/voicenotes-site/releases/download/v0.2.0/VoiceNotes.v0.2.0.Mac.Trial.dmg",
       "statusCode": 302
     }
   ]
