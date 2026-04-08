@@ -163,6 +163,18 @@
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">심플한 요금제</h2>
       <p class="text-text2 text-center mb-16">구독 없음. 숨겨진 비용 없음. 당신의 음성, 당신의 데이터, 당신의 기기.</p>
+
+      <!-- Common Features -->
+      <div class="bg-bg1 border border-border rounded-2xl p-6 mb-8">
+        <h3 class="text-sm font-semibold text-text3 mb-4">앱 전체 특징（모든 요금제 공통）</h3>
+        <div class="grid md:grid-cols-2 gap-3 text-sm text-text2">
+          <div class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 100% 오프라인</div>
+          <div class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 계정 등록 불필요</div>
+          <div class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Windows / Mac 지원</div>
+          <div class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 로컬 LLM（음성과 텍스트는 외부로 나가지 않음）</div>
+        </div>
+      </div>
+
       <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
         <!-- Free Trial -->
         <div class="bg-bg1 border border-border rounded-2xl p-8">
@@ -170,10 +182,9 @@
           <p class="text-text3 text-sm mb-4">구매 전에 체험해 보세요</p>
           <div class="text-4xl font-bold mb-6">$0</div>
           <ul class="space-y-3 text-sm text-text2 mb-8">
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 120분 음성 인식</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 모든 기능 이용 가능</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 계정 등록 불필요</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 100% 오프라인</li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 녹음 및 음성 인식<span class="text-text3">（최대 120분）</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AI 회의록 생성<span class="text-accent text-xs ml-1">로컬 AI</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AI 채팅<span class="text-accent text-xs ml-1">로컬 AI</span></li>
           </ul>
           <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" class="block text-center bg-bg2 hover:bg-bg3 border border-border text-text px-6 py-3 rounded-xl text-sm font-medium transition-colors">
             무료 체험판 다운로드
@@ -187,12 +198,15 @@
           <div class="text-4xl font-bold mb-1">$14.99</div>
           <p class="text-text3 text-xs mb-6">한 번 결제로 영구 사용</p>
           <ul class="space-y-3 text-sm text-text2 mb-8">
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 무제한 음성 인식</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AI 회의록 생성</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 녹음 내용 AI 채팅</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Windows 또는 Mac</li>
-            출시 예정
-          </span>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 녹음 및 음성 인식<span class="text-accent text-xs ml-1">무제한</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AI 회의록 생성<span class="text-accent text-xs ml-1">로컬 AI</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AI 채팅<span class="text-accent text-xs ml-1">로컬 AI</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 내보내기 기능<span class="text-text3 text-xs ml-1">TXT/MD/SRT/MP3/MP4</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 1회 결제 · 평생 라이선스</li>
+          </ul>
+          <a href="https://voicenotes.lemonsqueezy.com/buy/5dcacbec-e8b3-4a67-9eed-2b04bb39b93f" class="block text-center bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-xl text-sm font-medium transition-colors">
+            지금 구매하기
+          </a>
         </div>
       </div>
       <p class="text-center text-text3 text-xs mt-8">100% 오프라인. 음성 데이터가 기기 밖으로 나가지 않습니다. 계정 등록 불필요.</p>

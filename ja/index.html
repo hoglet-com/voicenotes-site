@@ -162,7 +162,19 @@
   <section id="pricing" class="py-20 px-6 border-t border-border">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">シンプルな料金プラン</h2>
-      <p class="text-text2 text-center mb-16">サブスクリプションなし。隠れた費用なし。あなたの音声、あなたのデータ、あなたのデバイス。</p>
+      <p class="text-text2 text-center mb-12">サブスクリプションなし。隠れた費用なし。あなたの音声、あなたのデータ、あなたのデバイス。</p>
+
+      <!-- Common Features -->
+      <div class="bg-bg1 border border-border rounded-2xl p-6 mb-8">
+        <h3 class="text-sm font-semibold text-text3 mb-4">アプリ全体の特徴（すべてのプランに共通）</h3>
+        <div class="grid md:grid-cols-2 gap-3 text-sm text-text2">
+          <div class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 100% オフライン動作</div>
+          <div class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> アカウント登録不要</div>
+          <div class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Windows / Mac 対応</div>
+          <div class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> ローカルLLM（音声・テキストは外に出ない）</div>
+        </div>
+      </div>
+
       <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
         <!-- Free Trial -->
         <div class="bg-bg1 border border-border rounded-2xl p-8">
@@ -170,10 +182,9 @@
           <p class="text-text3 text-sm mb-4">購入前にお試しください</p>
           <div class="text-4xl font-bold mb-6">$0</div>
           <ul class="space-y-3 text-sm text-text2 mb-8">
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 120分まで文字起こし可能</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 録音・文字起こし・AI機能</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> アカウント登録不要</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 100% オフライン</li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 録音・文字起こし<span class="text-text3">（合計120分まで）</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 議事録の自動生成<span class="text-accent text-xs ml-1">ローカルAI</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AIチャット<span class="text-accent text-xs ml-1">ローカルAI</span></li>
           </ul>
           <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" class="block text-center bg-bg2 hover:bg-bg3 border border-border text-text px-6 py-3 rounded-xl text-sm font-medium transition-colors">
             無料トライアルをダウンロード
@@ -187,17 +198,17 @@
           <div class="text-4xl font-bold mb-1">$14.99</div>
           <p class="text-text3 text-xs mb-6">一度の支払いで永久に使える</p>
           <ul class="space-y-3 text-sm text-text2 mb-8">
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 無制限の文字起こし</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> エクスポート機能（TXT/MD/SRT/MP3/MP4）</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> すべてのAI機能</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Windows または Mac</li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 録音・文字起こし<span class="text-accent text-xs ml-1">無制限</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 議事録の自動生成<span class="text-accent text-xs ml-1">ローカルAI</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AIチャット<span class="text-accent text-xs ml-1">ローカルAI</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> エクスポート機能<span class="text-text3 text-xs ml-1">TXT/MD/SRT/MP3/MP4</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 買い切り・永久ライセンス</li>
           </ul>
           <span class="block text-center bg-bg3 text-text3 px-6 py-3 rounded-xl text-sm font-medium cursor-not-allowed">
             準備中
           </span>
         </div>
       </div>
-      <p class="text-center text-text3 text-xs mt-8">100% オフライン。音声データがデバイスの外に出ることはありません。アカウント登録不要。</p>
     </div>
   </section>
 

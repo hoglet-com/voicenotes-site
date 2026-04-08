@@ -163,6 +163,18 @@
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">简单透明的价格</h2>
       <p class="text-text2 text-center mb-16">无订阅。无隐藏费用。您的语音、您的数据、您的设备。</p>
+
+      <!-- Common Features -->
+      <div class="bg-bg1 border border-border rounded-2xl p-6 mb-8">
+        <h3 class="text-sm font-semibold text-text3 mb-4">应用整体特性（所有计划通用）</h3>
+        <div class="grid md:grid-cols-2 gap-3 text-sm text-text2">
+          <div class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 100% 离线运行</div>
+          <div class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 无需注册账号</div>
+          <div class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Windows / Mac 支持</div>
+          <div class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 本地 LLM（语音和文字不外传）</div>
+        </div>
+      </div>
+
       <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
         <!-- Free Trial -->
         <div class="bg-bg1 border border-border rounded-2xl p-8">
@@ -170,10 +182,9 @@
           <p class="text-text3 text-sm mb-4">先试后买</p>
           <div class="text-4xl font-bold mb-6">$0</div>
           <ul class="space-y-3 text-sm text-text2 mb-8">
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 120分钟转写额度</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 全部功能可用</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 无需注册账号</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 100% 离线</li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 录音与转写<span class="text-text3">（累计 120 分钟）</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AI 会议纪要<span class="text-accent text-xs ml-1">本地 AI</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AI 对话<span class="text-accent text-xs ml-1">本地 AI</span></li>
           </ul>
           <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" class="block text-center bg-bg2 hover:bg-bg3 border border-border text-text px-6 py-3 rounded-xl text-sm font-medium transition-colors">
             下载免费试用版
@@ -187,12 +198,15 @@
           <div class="text-4xl font-bold mb-1">$14.99</div>
           <p class="text-text3 text-xs mb-6">一次付款，永久使用</p>
           <ul class="space-y-3 text-sm text-text2 mb-8">
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 无限制转写</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AI 会议纪要</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AI 录音问答</li>
-            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Windows 或 Mac</li>
-            即将推出
-          </span>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 录音与转写<span class="text-accent text-xs ml-1">无限制</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AI 会议纪要<span class="text-accent text-xs ml-1">本地 AI</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AI 对话<span class="text-accent text-xs ml-1">本地 AI</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 导出功能<span class="text-text3 text-xs ml-1">TXT/MD/SRT/MP3/MP4</span></li>
+            <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07820" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 一次性购买 · 终身许可</li>
+          </ul>
+          <a href="https://voicenotes.lemonsqueezy.com/buy/5dcacbec-e8b3-4a67-9eed-2b04bb39b93f" class="block text-center bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-xl text-sm font-medium transition-colors">
+            立即购买
+          </a>
         </div>
       </div>
       <p class="text-center text-text3 text-xs mt-8">100% 离线运行。您的语音数据绝不离开设备。无需注册账号。</p>
