@@ -9,7 +9,7 @@
     },
     {
       "source": "/download/mac{/}?",
-      "destination": "https://github.com/hoglet-com/VoiceNotes/releases/download/v0.2.1/VoiceNotes-0.2.1-mac-trial.dmg",
+      "destination": "https://github.com/voicenotes-app/voicenotes-site/releases/download/v0.2.1/VoiceNotes-0.2.1-mac-trial.dmg",
       "statusCode": 302
     }
   ]
