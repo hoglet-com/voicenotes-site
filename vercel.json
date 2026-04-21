@@ -4,7 +4,7 @@
   "redirects": [
     {
       "source": "/download/windows{/}?",
-      "destination": "https://github.com/voicenotes-app/voicenotes-site/releases/download/v0.2.0-trial/VoiceNotes.Setup.0.2.0.exe",
+      "destination": "https://github.com/voicenotes-app/voicenotes-site/releases/download/v0.1.0/VoiceNotes-1.1.0-win-setup.exe",
       "statusCode": 302
     },
     {
