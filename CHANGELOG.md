@@ -1,5 +1,36 @@
 # VoiceNotes Landing Page - 変更履歴
 
+## 2026-04-22
+
+### Windows版リリースに伴うLP更新（v0.1.0）
+- **変更内容**: GitHub Releases に Win版ビルド（`VoiceNotes-1.1.0-win-setup.exe`）を公開したのに合わせて、LP側のダウンロード導線を「準備中」から有効リンクに切り替え
+- **対象ファイル**: 全言語版（ja, en, zh, ko, es）、`vercel.json`、`ja/tokusho.html`
+- **変更理由**:
+  - Win版が実際にダウンロード可能になったため、LP上の「準備中」表記が実態と乖離していた
+  - 既存の `/download/windows` リダイレクト定義が未リリースのアセットを指していたため、404 になる可能性があった
+- **詳細**:
+  - `vercel.json` の `/download/windows` 宛先を `v0.2.0-trial/VoiceNotes.Setup.0.2.0.exe`（未リリース）から `v0.1.0/VoiceNotes-1.1.0-win-setup.exe`（実アセット）に修正
+  - 全5言語の `index.html` で「Windows版 — 準備中」相当の無効化 `<span>` を、Mac版と同スタイル（`bg-accent`）のアクティブな `<a href="/download/windows">` に置換
+  - `ja/tokusho.html` の「Windows版（準備中）: 現在開発中です」を、Mac版と同じ `<ul>` 形式の動作環境一覧（Windows 10+/NVIDIA GPU 推奨/8GB RAM 推奨）に差し替え
+
+### 未署名ビルドに関する注意書きの追加
+- **変更内容**: ダウンロードボタン直下に、Windows版が未コード署名であることとインストール時の対処法を記載
+- **対象ファイル**: 全言語版（ja, en, zh, ko, es）
+- **変更理由**:
+  - Win版は現時点でコード署名証明書を適用していないため、初回実行時に Microsoft Defender SmartScreen の警告が表示される
+  - 警告画面で離脱するユーザーを減らすため、事前に「詳細情報 → 実行」の対処手順を提示
+- **詳細**:
+  - ボタン群の `<div>` の余白を `mb-12` → `mb-4` に縮め、直下に `<p class="text-text3 text-xs text-center max-w-xl mx-auto mb-12">` で注意書きを追加
+  - 文言は各言語の既存トーン（es は非アクセント表記、zh は「更多信息」「仍要运行」等の標準訳）に揃え、SmartScreen の操作手順（「詳細情報」→「実行」相当）を明記
+
+### 英語版の不可視制御文字を除去
+- **変更内容**: `en/index.html` に混入していた U+0003（ETX）制御文字を正規の HTML コメントに置換
+- **対象ファイル**: `en/index.html`
+- **変更理由**: 一部ブラウザ／フォント環境で App Features セクション左上に小さなグリフ（「ゴミ」状のアーティファクト）として描画されていた
+- **詳細**:
+  - ダウンロードボタン群と Common Features カードの間の空行に U+0003 が1バイト混入しており、他4言語では同位置にある `<!-- Common Features -->` コメントに揃えて置換
+  - 全 html ファイルを走査し、他箇所に不可視制御文字が残っていないことを確認
+
 ## 2026-04-21
 
 ### ダウンロードボタンのレイアウト最適化
